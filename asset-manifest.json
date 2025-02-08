@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Love-Message/static/css/main.2f239679.css",
+    "main.js": "/Love-Message/static/js/main.fd69ccb8.js",
+    "static/js/488.f382b4f4.chunk.js": "/Love-Message/static/js/488.f382b4f4.chunk.js",
+    "index.html": "/Love-Message/index.html",
+    "main.2f239679.css.map": "/Love-Message/static/css/main.2f239679.css.map",
+    "main.fd69ccb8.js.map": "/Love-Message/static/js/main.fd69ccb8.js.map",
+    "488.f382b4f4.chunk.js.map": "/Love-Message/static/js/488.f382b4f4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f239679.css",
+    "static/js/main.fd69ccb8.js"
+  ]
+}
