@@ -1,0 +1,84 @@
+/* Global body styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #b2bec3; /* Light pink background */
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Container for the LoveMessage component */
+.love-message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fce4ec;
+  position: relative; /* To place the canvas behind */
+}
+
+/* Button styling */
+.love-message-button {
+  padding: 1rem 2rem;
+  background-color: #e91e63; /* Strong pink */
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 50px; /* Rounded full border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 10;
+  display: flex; /* Using flex to center text and icon */
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  gap: 0.5rem; /* Space between the icon and the text */
+}
+
+/* Add a heart icon before the text */
+.love-message-button::before {
+  font-size: 1.5rem; /* Icon size */
+}
+
+.love-message-button:hover {
+  background-color: #c2185b; /* Darker pink */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Styling for the text after clicking the button */
+.love-message-text {
+  margin-top: 0.7rem;
+  color: #c2185b; /* Darker pink */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  z-index: 10;
+}
+
+/* Canvas styling */
+#pinkboard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* Behind other elements */
+  pointer-events: none; /* Disable canvas interactions */
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 768px) {
+  .love-message-button {
+    padding: 0.8rem 1.6rem;
+    font-size: 1.1rem;
+  }
+
+  .love-message-text {
+    font-size: 1.6rem;
+  }
+}
